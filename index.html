@@ -11,20 +11,14 @@
     <link rel='stylesheet' type='text/css' media='screen' href='./static/css/styles.css'>
     
     <!--Scripts-->
-    <script src='./static/js/app.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jQuery library -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
 </head>
 <body>
-  <div class="card" style="width: 18rem;" id="artist-card">
-    <img class="card-img-top" src="./static/img/Paramore.jpg" alt="Card image cap" id="artist-image">
-    <div class="card-body">
-      <h4 class="card-title"><strong><span id="artist-name"></span></strong></h4>
-      <p class="card-text" id="artist-country"></p>
-      <p class="card-text" id="artist-genre"></p>
-      <a href="#" class="btn btn-primary" id="artist-lyrics">Favorite lyrics</a>
-    </div>
+  <div id="contentContainer">
+    <div class="card-deck p-3" id="artist-card"></div>
   </div>
+    <script src='./static/js/app.js'></script>
 </body>
 </html>
