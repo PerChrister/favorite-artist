@@ -8,10 +8,10 @@ function Artist(name,country,genre,lyrics){
 let artists = [];
 
 const paramore = new Artist('Paramore','U.S.A.','Alternative Rock/Pop Punk/Pop Rock',"That's what you get when you let your heart win!");
-const radiohead = new Artist('Radiohead','England','Alternative Rock/Art Rock/Experimental Rock');
-const gizzards = new Artist('King Gizzard and the Lizard Wizard','Australia','Psychedelic Rock/Garage Rock/Heavy Metal');
-const queens = new Artist('Queens of the Stone Age','U.S.A.','Stoner Rock/Hard Rock/Alternative Rock');
-const monkeys = new Artist('Arctic Monkeys','England','Indie Rock/Garage Rock/Post-Punk Revival');
+const radiohead = new Artist('Radiohead','England','Alternative Rock/Art Rock/Experimental Rock',"I'm a creep. I'm a weirdo. What the hell am I doing here? I don't belong here.");
+const gizzards = new Artist('King Gizzard and the Lizard Wizard','Australia','Psychedelic Rock/Garage Rock/Heavy Metal',"Rattlesnake, rattlesnake, rattlesnake, rattle me!");
+const queens = new Artist('Queens of the Stone Age','U.S.A.','Stoner Rock/Hard Rock/Alternative Rock',"No one knows.");
+const monkeys = new Artist('Arctic Monkeys','England','Indie Rock/Garage Rock/Post-Punk Revival','R U Mine?');
 
 artists.push(paramore);
 artists.push(radiohead);
@@ -33,14 +33,8 @@ const createCard = (artist) => {
       <strong>Genre:</strong> ${artist.genre}
     </p>
     <p class="card-text">
-      <button id="button" onclick="Perform()">Perform!</button> 
+      Lyrics: ${artist.lyrics}
     </p>
-    <script>
-    function Perform(){
-    document.getElementById("card-text").innerHTML = 
-    <p class="card-text" ${artist.lyrics}</p></div>;
-    }
-    </script>
     </div>
     `
     return card;
