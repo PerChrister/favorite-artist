@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Favorite Artists</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Favorite Artists</title>
+    <!--Metas -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!--Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='./static/css/styles.css'>
+    
+    <!--Scripts-->
     <script src='./static/js/app.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jQuery library -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
 </head>
 <body>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
+  <div class="card" style="width: 18rem;" id="artist-card">
+    <img class="card-img-top" src="./static/img/Paramore.jpg" alt="Card image cap" id="artist-image">
+    <div class="card-body">
+      <h4 class="card-title"><strong><span id="artist-name"></span></strong></h4>
+      <p class="card-text" id="artist-country"></p>
+      <p class="card-text" id="artist-genre"></p>
+      <a href="#" class="btn btn-primary" id="artist-lyrics">Favorite lyrics</a>
+    </div>
+  </div>
 </body>
 </html>
